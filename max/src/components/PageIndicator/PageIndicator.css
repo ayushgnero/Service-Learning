@@ -1,0 +1,19 @@
+
+.Status{
+  background: #048998;
+  width:100%;
+  pointer-events: none;
+  margin-top: -0.5%;
+  color:#f6f5f5;
+  height:50px;
+  line-height: 90%;
+  font-size:0.5rem;
+}
+h1{
+  margin-left: 5%;
+  padding-top: 1%
+}
+h3
+{
+  margin-left: 5%;
+}

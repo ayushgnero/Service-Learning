@@ -1,0 +1,24 @@
+export const PageItems = [
+  {
+    "UserProfile":[
+      {
+        "title":"UserProfile",
+        "Student":[
+          {
+            "type":"Student",
+          }
+        ],
+        "Parent":[
+          {
+            "type":"Parent",
+          }
+        ],
+        "Teacher":[
+          {
+            "type":"Teacher",
+          }
+        ],
+      }
+    ]
+  }
+]

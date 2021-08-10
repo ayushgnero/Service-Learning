@@ -1,0 +1,17 @@
+class Rectangle:
+  __length = 0 #private variable
+  __breadth = 0#private variabledef __init__(self): #constructorself.__length = 5self.__breadth = 3#printing values of the private variable within the class
+    print(self.__length)
+    print(self.__breadth)
+
+rec = Rectangle() #object created for the class 'Rectangle'
+#printing values of the private variable outside the class using the object created for the class 'Rectangle'
+print(rec.length)
+print(rec.breadth)
+Output:
+5
+3
+Traceback (most recent call last):
+File "main.py", line 11, in <module>
+print(rec.__length)
+AttributeError: 'Rectangle' object has no attribute '__length'
