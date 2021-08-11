@@ -1,0 +1,162 @@
+
+.flex-container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #DECBB1;
+    margin: 0 auto;
+    display: -webkit-flex; /* Safari */
+    display: flex; /* Standard syntax */
+}
+.flex-container1{
+    width: 100%;
+    height: 90vh;
+    border-radius: 30px;
+    margin: 0 auto;
+    display: -webkit-flex; /* Safari */
+    display: flex; /* Standard syntax */
+}
+.column{
+  background-color: #B69B7D;
+  width: 75vh;
+  z-index: 0;
+}
+.column1{
+  background-color: #DECBB1;
+  z-index: 0;
+}
+.logo{
+  position: absolute;
+  height: 25vh;
+  width: 25vh;
+  left:20%;
+  top:15%;
+  background-image: url(./image/logo.png);
+  background-size: cover;
+
+}
+.div-front{
+  width:170vh;
+  left: 4%;
+  top:5%;
+  height: 90vh;
+  position:absolute;
+  background-color: #fff;
+  border-radius: 30px;
+}
+.leftlogin{
+  background-image: url(./image/leftBackground.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom-left-radius: 30px;
+  width: 75vh;
+}
+.schoolname{
+  font-family: 'IBM Plex Serif', serif;
+  font-weight: 300;
+  position: absolute;
+  font-size: 4vh;
+  color: #fff;
+  left:11%;
+  top:38%;
+}
+.line-1 {
+  height: 2px;
+  width: 550px;
+  background: white;
+  position: absolute;
+  left:8%;
+  top:50%;
+  opacity: 30%;
+}
+.cityname{
+  font-family: 'IBM Plex Serif', serif;
+  font-weight: 100;
+  position: absolute;
+  font-size: 4vh;
+  color: #fff;
+  left:24.8%;
+  top:60%;
+}
+.formlogin1{
+  height:3.7vh;
+  font-family: 'IBM Plex Serif', serif;
+  width:40vh;
+  position: absolute;
+  top:49%;
+  color: #8F614B;
+  font-size: 1.7vh;
+  left:53%;
+  padding-left: 1.3%;
+  border: 2px #8F614B solid;
+  border-radius: 35px;
+}
+.formlogin{
+  height:3.7vh;
+  font-family: 'IBM Plex Serif', serif;
+  width:40vh;
+  font-size: 1.7vh;
+  position: absolute;
+  color: #8F614B;
+  top:42%;
+  left:53%;
+  padding-left: 1.3%;
+  border: 2px #8F614B solid;
+  border-radius: 35px;
+}
+.formloginfgt{
+  height:3.7vh;
+  font-family: 'IBM Plex Serif', serif;
+  width:40vh;
+  font-size: 1.7vh;
+  position: absolute;
+  color: #8F614B;
+  top:48%;
+  left:53%;
+  padding-left: 1.3%;
+  border: 2px #8F614B solid;
+  border-radius: 35px;
+}
+.statename{
+  font-family: 'IBM Plex Serif', serif;
+  font-weight: 400;
+  position: absolute;
+  font-size: 4vh;
+  color: #fff;
+  left:15.5%;
+  top:66%;
+}
+.para{
+  font-family: 'IBM Plex Serif', serif;
+  color: #B69B7D;
+  width:40vh;
+  margin-left:41%;
+  margin-top: 85%;
+}
+.para1{
+  font-family: 'IBM Plex Serif', serif;
+  color: #B69B7D;
+  width:40vh;
+  margin-left:41%;
+  margin-top: 97%;
+}
+.login{
+  height:4.5vh;
+  font-family: 'IBM Plex Serif', serif;
+  width:20vh;
+  background-color: #8F614B;
+  font-size: 1.7vh;
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  color: #fff;
+  top:56%;
+  left:53%;
+  border: 2px #8F614B solid;
+  border-radius: 35px;
+}
+.fgtpass{
+  color: #8F614B;
+  margin-left:-14%;
+  margin-top:48%;
+  text-decoration: none;
+}

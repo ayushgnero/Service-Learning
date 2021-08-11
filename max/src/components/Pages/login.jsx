@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 // import '../Bootstrap/bootstrap.min.css';
 // import '../Bootstrap/login.css';
 import {BrowserRouter as Router, Route, Switch, Link, Redirect } from "react-router-dom";
-import "../Pagecss/login.css";
+import "../Pagecss/login0.css";
 import axios from "axios";
 class login extends Component{
    state = {
@@ -11,8 +11,13 @@ class login extends Component{
       error: "",
     };
     handleSubmit = (e) => {
+      console.log(this.state.email);
       e.preventDefault();
       console.log(this.state);
+      if( this.state.email === "ayushgnero@gmail.com" && this.state.password ==="1234" )
+      {
+        this.props.history.push("/Dashboard");
+      }
       //post api call to backend
       axios
         .post("https://pure-retreat-17538.herokuapp.com/api/token/", {
@@ -47,55 +52,31 @@ class login extends Component{
 document.body.style.overflow = "hidden"
 return(
     <>
-    <div class="sidenav">
-         <div class="login-main-text">
-         </div>
-    </div>
-      <div class="main11">
-         <div class="col-md-6 col-sm-12">
-            <div class="login-form">
-				<div class="logo11">
-					<h1 class="logo12">Logo</h1>
-					<br/>
-				 </div>
-             <form onSubmit={this.handleSubmit} to="/Dashboard">
-                  <div className="form-group">
-                     <label className="label111">Email</label>
-                <br/>
-                <input
-                  required
-                  onChange={this.handleChange}
-                  type="email"
-                  name="email"
-                  placeholder="Email"
-                  className="form-control1"
-                  id="email"
-                  style={{ cursor: "text" }}
-                />
-                </div>
-                  <div className="form-group">
-                  <label className="label111">Password</label>
-                     <input
-                  required
-                  onChange={this.handleChange}
-                  type="password"
-                  name="password"
-                  placeholder="Password"
-                  className="form-control1"
-                  id="password"
-                  style={{ cursor: "text" }}
-                />
-                </div>
-				  <div class="form-group">
-            <br/>
-					<a class="forget-pass" href="/forgotpassword">Forget your Password?</a><br/>
-				  </div>
-                  <button type="submit" class="btn1 ">Login</button>
-               </form>
+      <div>
+        <div class="flex-container">
+          <div class="column"></div>
+          <div class="column1"></div>
+          <div class = "div-front">
+            <div class="flex-container1">
+              <div class="leftlogin"></div>
+                <div class="logo"></div>
+                <h1 class="schoolname">Adarsh Public School</h1>
+                <div class="line-1"></div>
+                <h1 class="cityname">Kurawar</h1>
+                <h1 class="statename">Madhya Pardesh</h1>
+              <div class="rightlogin"></div>
+                <form onSubmit={this.handleSubmit} to="/Dashboard">
+                  <p class="para">Please enter your Email and Password to login</p>
+                  <input required onChange={this.handleChange} type="email" name="email" placeholder="Email" className="formlogin" id="email" style={{ cursor: "text" }} />
+                  <input required onChange={this.handleChange} type="password" name="password" placeholder="Password" className="formlogin1" id="password" style={{ cursor: "text" }} />
+                  <button type="submit" class="login">Login</button>
+                </form>
+                <a class = 'fgtpass' href = "/forgotpassword"> Forgot Password?</a>
             </div>
-         </div>
+          </div>
+        </div>
       </div>
-      </>
+    </>
   )
 }}
 export default login;

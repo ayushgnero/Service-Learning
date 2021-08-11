@@ -1,5 +1,5 @@
 import axios from "axios";
-import "../Pagecss/login.css";
+import "../Pagecss/login0.css";
 import React,{Component} from 'react';
 import {BrowserRouter as Router, Route, Switch, Link, Redirect } from "react-router-dom";
 
@@ -40,37 +40,30 @@ class forgotpassword extends Component{
     render() {
   return (
     <>
-    <div class="sidenav">
-         <div class="login-main-text">
-			<img src="../img/forgot.jpeg" class="logo"/>
-         </div>
-      </div>
-      <div class="main">
-         <div class="col-md-6 col-sm-12">
-            <div class="login-form">
-				<div class="logo">
-					<h1>Logo</h1>
-					<br/>
-				 </div>
-               <form onSubmit={this.handleSubmit}>
-                  <div class="form-group">
-                  <input
-                  required
-                  onChange={this.handleChange}
-                  type="email"
-                  name="email"
-                  placeholder="Email"
-                  className="form-control label111 login-input"
-                  id="email"
-                  style={{ cursor: "text" }}
-                />
-                  </div>
-                  <button type="submit" class="btn btn-blue">Send Request</button>
-               </form>
+      <div>
+        <div class="flex-container">
+          <div class="column"></div>
+          <div class="column1"></div>
+          <div class = "div-front">
+            <div class="flex-container1">
+              <div class="leftlogin"></div>
+                <div class="logo"></div>
+                <h1 class="schoolname">Adarsh Public School</h1>
+                <div class="line-1"></div>
+                <h1 class="cityname">Kurawar</h1>
+                <h1 class="statename">Madhya Pardesh</h1>
+              <div class="rightlogin"></div>
+                <form onSubmit={this.handleSubmit} to="/Dashboard">
+                  <p class="para1">Please enter your Email</p>
+                  <input required onChange={this.handleChange} type="email" name="email" placeholder="Email" className="formloginfgt" id="email" style={{ cursor: "text" }} />
+                  <button type="submit" class="login">Login</button>
+                </form>
+
             </div>
-         </div>
+          </div>
+        </div>
       </div>
-      </>
+    </>
   )
 }
 }

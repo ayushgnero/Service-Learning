@@ -1,5 +1,5 @@
 .sidenav{
-  background-image: url(./login.jpeg);
+  background-image: url(./image/login.jpeg);
   background-repeat: no-repeat;
   background-size:60rem 105vh ;
   margin-left: -1%;
@@ -9,7 +9,7 @@
   float: left;
 }
 .sidenav1{
-  background-image: url(./forgot.jpeg);
+  background-image: url(./image/forgot.jpeg);
   background-repeat: no-repeat;
   background-size:60rem 105vh ;
   margin-left: -1%;

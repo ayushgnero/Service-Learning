@@ -20,8 +20,8 @@ function App() {
   return <Router>
 
   <Switch>
-    <Route exact path = "/" component = {login} />
     <Route exact path = "/Dashboard" component = {Dashboard} />
+    <Route exact path = "/" component = {login} />
     <Route exact path = "/bulkuser" component = {bulkuser} />
     <Route exact path = "/bulkupload" component = {bulkupload} />
     <Route exact path = "/login" component = {login} />
